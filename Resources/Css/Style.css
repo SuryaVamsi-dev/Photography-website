@@ -1,0 +1,534 @@
+
+/* it is applicable for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+
+/*  applicable for html elements */
+html{
+    background-color: white;
+    color: black;
+    font-family: 'Lato','Arial';
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    margin:0 auto 0 auto;
+    overflow-x: hidden;
+    
+
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+}
+
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+
+section {
+    padding: 80px 0;
+
+}
+
+.box {
+    padding: 1%;
+
+}
+
+.box p {
+
+    line-height: 145%;
+    font-size: 90%;
+}
+
+/* for icons */
+.icon-big {
+    display: block;
+    font-size: 250%;
+    color: #cf6d17;
+}
+
+/* for h1 and h2 common*/
+h1,h2,h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 250% !important ;
+    color: white;
+}
+
+h2 {
+    font-size: 200%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+
+
+}
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color:#df6e18; 
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.long-para {
+    line-height: 145% ;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+.sec-features .long-para {
+    margin-bottom: 25px;
+
+}
+
+
+/* it is for header elements */
+header {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/Head.JPG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.head-txt-box {
+    position: absolute;
+    width:1140px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-25%,-50%);
+}
+/* these 2 are for buttons in normal state and hover state */
+.btn:link,
+.btn:visited {
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s;
+    margin-right:15px;
+    border: 1.5px solid white;
+}
+
+
+.btn:hover,.btn:active{
+    background-color:#cf6d17;
+    border: 1.5px solid transparent;
+
+}
+
+/* Logo */
+.Logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+/* for the un ordered list 1.Offers 2.Contact Us 3.Sign In */
+.main-nav {
+    margin-top: 40px;
+    float:right;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    transition: border-bottom 0.2s;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+
+    border-bottom: 2px solid #cf6d17;
+    
+
+}
+
+/* previe ahocase */
+.sec-preview {
+    padding:0;
+
+}
+.preview-show {
+    list-style: none;
+    width: 100%;
+
+}
+
+.preview-show li {
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+.show-pic {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color:black; 
+}
+
+.show-pic img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    opacity: 0.8;
+}
+
+.show-pic img:hover{
+    transform: scale(1.15);
+    opacity: 1;
+
+}
+
+
+/* section for tasks */
+
+.sec-steps {
+    background-color: rgb(197, 192, 192);
+}
+
+
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right:3% ;
+    margin-top: 30px;
+
+}
+.steps-box:last-child{
+    padding-left:3% ;
+    margin-top: 70px;
+}
+
+.phone-screen {
+    width: 33%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color: #cf6d17;
+    border: 2px solid #cf6d17;
+    display: inline-block;
+    border-radius: 200%;
+    height: 50px;
+    width: 50px;
+    font-size: 150%;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+/* types of editing*/
+
+.sec-types {
+}
+
+
+.box img{
+    height: 200px;
+}
+
+.icon-small {
+    display: inline-block;
+    font-size: 120%;
+    text-align: center;
+    color: #cf6d17;
+    width: 30px;
+
+}
+
+
+/* coustomer reviews*/
+
+.sec-reviews {
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 10px;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 300%;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+}
+
+
+cite {
+    font-style: 90%;
+    margin-top: 20px;
+    display: block;
+}
+
+cite img{
+    height: 50px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* plaans monthly*/
+
+.sec-plans {
+
+    background-color:rgb(197, 192, 192);
+}
+
+.plan-box {
+    background-color: white;
+    width: 90%;
+    margin-left:5% ;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgb(197, 192, 192);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid rgb(202, 190, 190);
+
+}
+
+.plan-box div:first-child {
+    background-color: rgb(235, 212, 212);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+    
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    color: #cf6d17;
+
+}
+
+.plan-price span{
+    font-size: 40%;
+
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+.btn-normal:link,
+.btn-normal:visited,
+input[type=submit] {
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s;
+    margin-right:15px;
+    border: 1.5px solid black;
+}
+
+
+.btn-normal:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color:#22201e;
+    color: wheat;
+    border: 1.5px solid transparent;
+
+}
+
+
+/* contact form */
+
+.content-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 20px;
+    border:1px solid black ;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 2px;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+
+}
+
+.social-link {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-link li{
+
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footer-nav li:last-child,
+.social-link li:last-child {
+    margin-right: 0;
+}
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited {
+    color: #ddb897;
+    text-decoration:none;
+    transition: color 0.2s;
+    font-size: 110%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+.social-link li a:link,
+.social-link li a:visited {
+    font-size: 160%;
+} 
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover {
+    color: rgb(50, 105, 206);
+}
+
+.ion-social-twitter:hover {
+    color: rgb(50, 170, 206);
+}
+
+.ion-social-instagram:hover {
+    color: rgb(206, 50, 185);
+}
+
+footer p {
+    color: #ddb897;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
